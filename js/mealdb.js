@@ -1,3 +1,13 @@
+// Enter button work when you search any food
+const searchBtn = document.getElementById("search-btn");
+
+document.getElementById("inputField").addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        searchBtn.click();
+    }
+})
+
+
 const searchFood = async () => {
     const fieldInput = document.getElementById("inputField");
     const fieldText = fieldInput.value;
